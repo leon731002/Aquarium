@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SettingViewController" customModule="Aquarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="TP4-VI-lYi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAH-O3-4FD" userLabel="ContentView" customClass="UIView_Keyboard" customModule="Aquarium" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmP-Vx-3Ui" userLabel="IPView">
+                                        <rect key="frame" x="20" y="199" width="335" height="69"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCw-Pr-o1d" userLabel="IPLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="335" height="27"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="27" id="CRD-c5-b51"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="shadowOffset" width="-1" height="-1"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MqU-QW-VKh" userLabel="IPTextField">
+                                                <rect key="frame" x="0.0" y="39" width="335" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xIH-Ce-0Ea"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="MqU-QW-VKh" firstAttribute="width" secondItem="kCw-Pr-o1d" secondAttribute="width" id="0mJ-Oy-382"/>
+                                            <constraint firstAttribute="bottom" secondItem="MqU-QW-VKh" secondAttribute="bottom" id="60p-WP-qxB"/>
+                                            <constraint firstItem="MqU-QW-VKh" firstAttribute="top" secondItem="kCw-Pr-o1d" secondAttribute="bottom" constant="12" id="HK6-3u-KQE"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="SpY-la-fGK"/>
+                                            <constraint firstItem="kCw-Pr-o1d" firstAttribute="leading" secondItem="mmP-Vx-3Ui" secondAttribute="leading" id="coJ-5R-Sh7"/>
+                                            <constraint firstAttribute="trailing" secondItem="kCw-Pr-o1d" secondAttribute="trailing" id="jv2-D0-asg"/>
+                                            <constraint firstItem="MqU-QW-VKh" firstAttribute="leading" secondItem="mmP-Vx-3Ui" secondAttribute="leading" id="kXZ-97-cI4"/>
+                                            <constraint firstItem="kCw-Pr-o1d" firstAttribute="top" secondItem="mmP-Vx-3Ui" secondAttribute="top" id="kwr-gk-v6H"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIB-XV-raZ">
+                                        <rect key="frame" x="77" y="368" width="221.5" height="44"/>
+                                        <color key="backgroundColor" red="0.92592020750988147" green="0.88871047430830041" blue="0.21495182806324112" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="uiz-YZ-azY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Connect">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="connectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bXf-ig-sfn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="mmP-Vx-3Ui" firstAttribute="leading" secondItem="GAH-O3-4FD" secondAttribute="leading" constant="20" id="Gxi-lc-vgL"/>
+                                    <constraint firstItem="aIB-XV-raZ" firstAttribute="top" secondItem="mmP-Vx-3Ui" secondAttribute="bottom" constant="100" id="Olt-dw-J8G"/>
+                                    <constraint firstItem="aIB-XV-raZ" firstAttribute="centerX" secondItem="GAH-O3-4FD" secondAttribute="centerX" id="QCS-lv-ecx"/>
+                                    <constraint firstItem="aIB-XV-raZ" firstAttribute="width" secondItem="mmP-Vx-3Ui" secondAttribute="width" multiplier="0.66" id="ote-J7-IAv"/>
+                                    <constraint firstAttribute="trailing" secondItem="mmP-Vx-3Ui" secondAttribute="trailing" constant="20" id="sZv-qm-brW"/>
+                                    <constraint firstItem="mmP-Vx-3Ui" firstAttribute="centerY" secondItem="GAH-O3-4FD" secondAttribute="centerY" constant="-90" id="uF2-P2-51i"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GAH-O3-4FD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ATs-Je-whC"/>
+                            <constraint firstItem="TP4-VI-lYi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="K6o-bB-HtF"/>
+                            <constraint firstItem="TP4-VI-lYi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SEx-bs-nQn"/>
+                            <constraint firstAttribute="bottom" secondItem="TP4-VI-lYi" secondAttribute="bottom" id="Z2h-sd-Dmd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GAH-O3-4FD" secondAttribute="bottom" id="cAr-Aw-rbU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GAH-O3-4FD" secondAttribute="trailing" id="fo2-mH-5fR"/>
+                            <constraint firstItem="GAH-O3-4FD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="osL-EI-t8B"/>
+                            <constraint firstAttribute="trailing" secondItem="TP4-VI-lYi" secondAttribute="trailing" id="rIK-ik-BNw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomConstraintOfContentView" destination="cAr-Aw-rbU" id="JQB-HI-04r"/>
+                        <outlet property="contentView" destination="GAH-O3-4FD" id="AEd-5v-bo7"/>
+                        <outlet property="ipTextField" destination="MqU-QW-VKh" id="b8T-kv-bUv"/>
+                        <outlet property="ipTitleLabel" destination="kCw-Pr-o1d" id="1hg-qs-Aur"/>
+                        <outlet property="saveButton" destination="aIB-XV-raZ" id="4iS-tj-YhL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-239" y="54"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="R1y-8W-WXg">
+            <objects>
+                <viewController storyboardIdentifier="WebView" id="i6P-Jw-Xen" customClass="WebViewController" customModule="Aquarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gci-zf-xxg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="網頁讀取失敗" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rg6-fV-wLf" userLabel="ErrorLabel">
+                                <rect key="frame" x="20" y="40" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lUS-n4-lfj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0" green="0.18518404150197629" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mFX-hX-Mq1" firstAttribute="trailing" secondItem="Rg6-fV-wLf" secondAttribute="trailing" constant="20" id="Aa1-1a-4Bi"/>
+                            <constraint firstItem="Rg6-fV-wLf" firstAttribute="leading" secondItem="mFX-hX-Mq1" secondAttribute="leading" constant="20" id="CxX-yy-F4T"/>
+                            <constraint firstItem="Rg6-fV-wLf" firstAttribute="top" secondItem="mFX-hX-Mq1" secondAttribute="top" constant="20" id="uWg-74-xtx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mFX-hX-Mq1"/>
+                    </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="Rg6-fV-wLf" id="B4c-6D-DT6"/>
+                        <outlet property="view" destination="Gci-zf-xxg" id="5Bf-v1-jYj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DTh-B0-hTx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="54"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BackgroundImage" width="540" height="960"/>
+    </resources>
+</document>

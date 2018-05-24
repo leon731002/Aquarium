@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Aquarium
+
+  Created by Leon on 2018/5/23.
+  Copyright © 2018年 Leon. All rights reserved.
+*/
+"SettingViewController0001" = "Url or IP Address";
+"SettingViewController0002" = "Connect";
+"SettingViewController0003" = "Invalid Url";
+"SettingViewController0004" = "OK";
+"SettingViewController0005" = "Please check your network status";
+"SettingViewController0006" = "Failed to connect with server:\n%@";
