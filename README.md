@@ -14,4 +14,12 @@ I manage the third party SDK by CocoaPods, so I think you may need to install it
 ## CocoaPods
   - install cocoapods</BR>
   <code>sudo gem install cocoapods</code>
+  
+  
+----
+## Spec
+  - home page: http://192.168.1.1:10240/mobile/sensor 
+  - send a register request before launching home page.
+ 
+ http://192.168.1.1:10240/device/signageregister?json={"appCode":"fish_android","appKey":"a94502f9384c3f09725341220bfdc53cae37fafcce85d050bd","serialNumber":"unknown","os":"Android","osVersion":"7.0","heightPixel":"1794","widthPixel":"1080","macAddress":"02:00:00:00:00:00","pushNotificationId":"eie093kmc9dmme"}
 
