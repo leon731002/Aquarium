@@ -7,8 +7,11 @@ In addition, I classify the files which are under the project into four types as
   - Models: Data structure.
   - StringTables: text of UI components which are in multi-language.
 </BR>
-I manage the third party SDK by CocoaPod, so I think you may need to install it first.
-### CocoaPoad
-- install cocoapod</BR>
-<code>sudo gem install cocoapods</code>
+I manage the third party SDK by CocoaPod, so I think you may need to install it first. 
+
+
+----
+## CocoaPod
+  - install cocoapod</BR>
+  <code>sudo gem install cocoapods</code>
 
