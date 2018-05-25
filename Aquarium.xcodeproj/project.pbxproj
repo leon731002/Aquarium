@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3503F3A820B7CFF5001FB5CF /* HttpRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3503F3A720B7CFF4001FB5CF /* HttpRequestFactory.swift */; };
 		3527E3B420B5AA1A00442EF5 /* GetString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3527E3AF20B5AA1A00442EF5 /* GetString.swift */; };
 		3527E3B520B5AA1A00442EF5 /* CommonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3527E3B020B5AA1A00442EF5 /* CommonTool.swift */; };
 		3527E3BB20B5B37A00442EF5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3527E3BD20B5B37A00442EF5 /* Localizable.strings */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3503F3A720B7CFF4001FB5CF /* HttpRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpRequestFactory.swift; sourceTree = "<group>"; };
 		3527E3AF20B5AA1A00442EF5 /* GetString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetString.swift; sourceTree = "<group>"; };
 		3527E3B020B5AA1A00442EF5 /* CommonTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTool.swift; sourceTree = "<group>"; };
 		3527E3BC20B5B37A00442EF5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				3527E3C720B7201A00442EF5 /* Reachability */,
+				3503F3A720B7CFF4001FB5CF /* HttpRequestFactory.swift */,
 				3527E3C520B5D67900442EF5 /* UIView_Keyboard.swift */,
 				3527E3C320B5D45200442EF5 /* ReachabilityManager.swift */,
 				3527E3C020B5C8A400442EF5 /* SharedPreferenceManager.swift */,
@@ -70,13 +73,6 @@
 				3527E3B020B5AA1A00442EF5 /* CommonTool.swift */,
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		3527E3BF20B5C85800442EF5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		3527E3C720B7201A00442EF5 /* Reachability */ = {
@@ -109,15 +105,14 @@
 		355722A420B1300E00B2BA1F /* Aquarium */ = {
 			isa = PBXGroup;
 			children = (
-				3527E3BF20B5C85800442EF5 /* Model */,
 				3527E3AE20B5AA1A00442EF5 /* Tools */,
 				355722A520B1300E00B2BA1F /* AppDelegate.swift */,
 				355722A720B1300E00B2BA1F /* SettingViewController.swift */,
+				355722B720B3253500B2BA1F /* WebViewController.swift */,
 				355722A920B1300E00B2BA1F /* Main.storyboard */,
 				355722AC20B1301100B2BA1F /* Assets.xcassets */,
 				355722AE20B1301100B2BA1F /* LaunchScreen.storyboard */,
 				355722B120B1301100B2BA1F /* Info.plist */,
-				355722B720B3253500B2BA1F /* WebViewController.swift */,
 				3527E3BD20B5B37A00442EF5 /* Localizable.strings */,
 				3527E3C220B5D09B00442EF5 /* Aquarium-Bridging-Header.h */,
 			);
@@ -259,6 +254,7 @@
 				3527E3B520B5AA1A00442EF5 /* CommonTool.swift in Sources */,
 				355722A820B1300E00B2BA1F /* SettingViewController.swift in Sources */,
 				3527E3B420B5AA1A00442EF5 /* GetString.swift in Sources */,
+				3503F3A820B7CFF5001FB5CF /* HttpRequestFactory.swift in Sources */,
 				3527E3C120B5C8A400442EF5 /* SharedPreferenceManager.swift in Sources */,
 				3527E3C620B5D67A00442EF5 /* UIView_Keyboard.swift in Sources */,
 				355722B820B3253500B2BA1F /* WebViewController.swift in Sources */,

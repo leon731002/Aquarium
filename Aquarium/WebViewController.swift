@@ -23,7 +23,7 @@ class WebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initWebView()
-        self.addSubViewToFullScreen(self.webView, superView: self.view)
+        CommonTool.sharedInstance.addSubViewToFullScreen(self.webView, superView: self.view)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,46 +54,8 @@ class WebViewController: UIViewController, WKNavigationDelegate, WKUIDelegate {
     }
     
     //MARK: - Private Function
-    private func addSubViewToFullScreen(_ subView: UIView, superView: UIView) {
-        subView.translatesAutoresizingMaskIntoConstraints = false
-        superView.addSubview(subView)
-        var popViewConstraint = NSLayoutConstraint(item: subView,
-                                                   attribute: .left,
-                                                   relatedBy: .equal,
-                                                   toItem: superView,
-                                                   attribute: .left,
-                                                   multiplier: 1.0,
-                                                   constant: 0.0);
-        superView.addConstraint(popViewConstraint)
-        
-        popViewConstraint = NSLayoutConstraint(item: subView,
-                                               attribute: .right,
-                                               relatedBy: .equal,
-                                               toItem: superView,
-                                               attribute: .right,
-                                               multiplier: 1.0,
-                                               constant: 0.0);
-        superView.addConstraint(popViewConstraint)
-        
-        popViewConstraint = NSLayoutConstraint(item: subView,
-                                               attribute: .top,
-                                               relatedBy: .equal,
-                                               toItem: superView,
-                                               attribute: .top,
-                                               multiplier: 1.0,
-                                               constant: 0.0);
-        superView.addConstraint(popViewConstraint)
-        
-        popViewConstraint = NSLayoutConstraint(item: subView,
-                                               attribute: .bottom,
-                                               relatedBy: .equal,
-                                               toItem: superView,
-                                               attribute: .bottom,
-                                               multiplier: 1.0,
-                                               constant: 0.0);
-        superView.addConstraint(popViewConstraint)
-        
-        subView.layoutIfNeeded()
+    private func initUIString() {
+        self.errorLabel.text = GetString.sharedInstance.getString("SettingViewController0007")
     }
     
     private func loadDataSuccess(_ success: Bool) {

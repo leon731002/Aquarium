@@ -11,3 +11,4 @@
 "SettingViewController0004" = "OK";
 "SettingViewController0005" = "Please check your network status";
 "SettingViewController0006" = "Failed to connect with server:\n%@";
+"SettingViewController0007" = "Failed to launch the page";
